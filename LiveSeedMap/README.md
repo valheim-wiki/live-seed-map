@@ -1,50 +1,39 @@
 # Live Seed Map
 
-Your running Valheim game on the seed map at [thevalheim.wiki](https://thevalheim.wiki/map).
+A realtime map of your Valheim server in a browser, through the Live Seed Map companion mod at [thevalheim.wiki](https://thevalheim.wiki/map). See your position and nearby creatures with their stars and distances.
 
-- Where you stand and which way you face, four times a second.
-- Other players, when they show their position on the in-game map.
-- Creatures around you within the range you choose, with their stars.
-- Your map pins.
-- Which Haldor, Hildir and Bog Witch camp your world kept. Each has ten possible sites; the first one your world generates stays and the others are removed.
-- Nearest-first search from where you stand: copper, a Troll cave, Northern Salmon water.
-- Point at an item or a creature in the game and press **J**: the seed map shows where to find it. The map reminds you of the key, also when you change it.
-- Optional pin sync: your pins on the seed map and in the game stay the same, check marks included.
-- Your ship under your marker, turned the way it sails, and the wind as the in-game map shows it.
-- Optional fog of war: the ground your map has not explored yet, dimmed on the seed map.
-- Your portals, listed by tag with where each pair leads and how far apart they are. Click a pair to see both ends on the seed map.
-- Track in game: pick a place, a pin or a portal on the seed map and your game shows it as a ping only you see, with its distance, until you remove it.
+![The live map connected to Valheim, showing the player and nearby creatures](https://raw.githubusercontent.com/valheim-wiki/live-seed-map/main/listing/screenshots/map-player.png)
 
-## Use
+## Find the nearest place
 
-1. Install with r2modman, Thunderstore Mod Manager or Gale and start Valheim modded.
-   On a Mac, where those managers do not run, follow [Valheim mods on Mac](https://thevalheim.wiki/guides/mods-on-mac).
-2. Load your world.
-3. Open [thevalheim.wiki/map](https://thevalheim.wiki/map) and press **Connect game**. Chrome and Edge ask once whether the page may reach apps on this device.
+Search from where you stand. This connected game shows Burial Chambers sorted by distance from the player.
 
-When the map shows another seed, it offers the map of your world's seed. The connection is remembered, so next time the map finds your game on its own.
+![Burial Chambers search results ordered by distance from the connected player](https://raw.githubusercontent.com/valheim-wiki/live-seed-map/main/listing/screenshots/search-results.png)
 
-## On your computer only
+## Your portals
 
-The mod answers only on `127.0.0.1`, only to pages from thevalheim.wiki, and sends nothing over the internet. It reads the game and changes nothing in your world or character (it keeps the portals it has seen in `BepInEx/config/LiveSeedMap/`), unless you turn on `AllowPinWrites`: then the seed map may add, remove and check off your own map pins, and nothing else. A tracked target is a ping drawn only in your own game; other players never see it.
+Select a portal pair to see both ends and the connection between them.
 
-## Settings
+![The selected Moder portal pair linked across the map](https://raw.githubusercontent.com/valheim-wiki/live-seed-map/main/listing/screenshots/portals-moder.png)
 
-`BepInEx/config/wiki.thevalheim.liveseedmap.cfg`:
+## Track a place in your game
 
-| Setting | Default | What it sets |
-|---|---|---|
-| `Interval` | `0.25` | Seconds between updates, at least `0.1` |
-| `Origins` | `https://thevalheim.wiki` | Pages allowed to read your game |
-| `AllowPinWrites` | `false` | Let the seed map add, remove and check off your fire, house, hammer, dot and portal pins |
-| `ShowOnMapKey` | `J` | Show the item or creature you point at on the seed map |
-| `AllowTracking` | `true` | Let the seed map show a target in your game as a ping with its distance |
-| `ClearWithin` | `0` | Metres from a tracked target at which it is removed when the map does not say; `0` keeps it |
+Pick a map target and choose **Track in game**. Here Haldor is tracked at 2.6 km in the browser and in Valheim.
 
-## Multiplayer
+![Haldor tracked at 2.6 km on the connected browser map](https://raw.githubusercontent.com/valheim-wiki/live-seed-map/main/listing/screenshots/haldor-tracked.png)
 
-On a server or as the host, other players appear the way the in-game map shows them: only those who share their position.
+![The running Valheim game showing the matching Haldor 2.6 km ping](https://raw.githubusercontent.com/valheim-wiki/live-seed-map/main/listing/screenshots/game-haldor-ping.png)
 
-On a server your game only knows the portals near where you have been. The mod remembers each one it sees, and for a connected portal it asks the server for the other end, as the game does when you stand at a portal. Playing fills the list in.
+## Install
 
-Guide: [thevalheim.wiki/guides/live-seed-map](https://thevalheim.wiki/guides/live-seed-map)
+1. Install BepInExPack Valheim, then Live Seed Map with your mod manager or extract the manual ZIP into your Valheim folder.
+2. Start Valheim and load your world.
+3. Open [thevalheim.wiki/map](https://thevalheim.wiki/map) and press **Connect game**. Allow the browser's local-network prompt when asked.
+
+On Apple Silicon, follow [Valheim mods on Mac](https://thevalheim.wiki/guides/mods-on-mac) for the native loader.
+
+![The site showing Connected and Follow me on the map with Valheim running](https://raw.githubusercontent.com/valheim-wiki/live-seed-map/main/listing/screenshots/home-connected.png)
+
+The mod listens on your computer at `127.0.0.1`. See the [installation guide and settings](https://thevalheim.wiki/guides/live-seed-map) for configuration, permissions and multiplayer behavior.
+
+Support development at [Ko-fi](https://ko-fi.com/thevalheimwiki).
