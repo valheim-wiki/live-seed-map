@@ -1,6 +1,6 @@
-# Live Seed Map
+# Realtime Map from seed
 
-A realtime map of your Valheim server in a browser, through the Live Seed Map companion mod at [thevalheim.wiki](https://thevalheim.wiki/map). See your position and nearby creatures with their stars and distances.
+A realtime map of your Valheim server in a browser, through the Realtime Map from seed companion mod at [thevalheim.wiki](https://thevalheim.wiki/map). See your position and nearby creatures with their stars and distances.
 
 ![The live map connected to Valheim, showing the player and nearby creatures](https://raw.githubusercontent.com/valheim-wiki/live-seed-map/main/listing/screenshots/map-player.png)
 
@@ -26,7 +26,7 @@ Pick a map target and choose **Track in game**. Here Haldor is tracked at 2.6 km
 
 ## Install
 
-1. Install BepInExPack Valheim, then Live Seed Map with your mod manager or extract the manual ZIP into your Valheim folder.
+1. Install BepInExPack Valheim, then Realtime Map from seed with your mod manager or extract the manual ZIP into your Valheim folder.
 2. Start Valheim and load your world.
 3. Open [thevalheim.wiki/map](https://thevalheim.wiki/map) and press **Connect game**. Allow the browser's local-network prompt when asked.
 

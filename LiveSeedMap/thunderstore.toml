@@ -6,7 +6,7 @@ schemaVersion = "0.0.1"
 namespace = "TheValheimWiki"
 name = "LiveSeedMap"
 versionNumber = "1.5.1"
-description = "A realtime map of your Valheim server in a browser, through the Live Seed Map companion mod at thevalheim.wiki."
+description = "A realtime map of your Valheim server in a browser, through the Realtime Map from seed companion mod at thevalheim.wiki."
 websiteUrl = "https://thevalheim.wiki/guides/live-seed-map"
 containsNsfwContent = false
 

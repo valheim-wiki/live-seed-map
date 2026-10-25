@@ -7,7 +7,7 @@ using UnityEngine;
 
 namespace LiveSeedMap
 {
-    [BepInPlugin(Guid, "Live Seed Map", Version)]
+    [BepInPlugin(Guid, "Realtime Map from seed", Version)]
     public sealed class Plugin : BaseUnityPlugin
     {
         public const string Guid = "wiki.thevalheim.liveseedmap";
