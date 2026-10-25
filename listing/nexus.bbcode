@@ -1,0 +1,43 @@
+[size=5][b]Live Seed Map[/b][/size]
+
+A realtime map of your Valheim server in a browser, connected to the game data at [url=https://thevalheim.wiki/map]thevalheim.wiki[/url] through the Live Seed Map companion mod.
+
+[list]
+[*]Where you stand and which way you face, four times a second.
+[*]Other players, when they show their position on the in-game map.
+[*]Creatures around you within the range you choose, with their stars.
+[*]Your map pins, with optional editing from the browser.
+[*]Portals and their connections, your ship and wind, and optional fog of war.
+[*]Point at an item or creature and press [b]J[/b] to find it on the map; track a map target as a ping in your game.
+[*]Experimental building view: player-built pieces and crops your game has loaded.
+[*]Which Haldor, Hildir and Bog Witch camp your world kept. Each has ten possible sites; the first one your world generates stays and the others are removed.
+[*]Nearest-first search from where you stand: copper, a Troll cave, Northern Salmon water.
+[/list]
+
+[size=4][b]Install[/b][/size]
+[list=1]
+[*]Install [url=https://thunderstore.io/c/valheim/p/denikson/BepInExPack_Valheim/]BepInExPack Valheim[/url]. On Apple Silicon, follow [url=https://thevalheim.wiki/guides/mods-on-mac]Valheim mods on Mac[/url] for the native loader instead.
+[*]Install this mod with Vortex, or extract the archive into your Valheim folder so the DLL sits in [font=Courier New]BepInEx/plugins/LiveSeedMap/[/font].
+[*]Start Valheim and load your world.
+[*]Open [url=https://thevalheim.wiki/map]thevalheim.wiki/map[/url] and press [b]Connect game[/b]. Chrome and Edge ask once whether the page may reach apps on this device.
+[/list]
+
+When the map shows another seed, it offers the map of your world's seed. The connection is remembered, so next time the map finds your game on its own.
+
+[size=4][b]On your computer only[/b][/size]
+The mod answers only on [font=Courier New]127.0.0.1[/font], only to pages from thevalheim.wiki, and sends nothing over the internet. Gameplay is read-only by default. Enabling [b]AllowPinWrites[/b] lets the browser add, remove and check off your own map pins. Portal and building observations are kept locally in [font=Courier New]BepInEx/config/LiveSeedMap/[/font]; tracking draws a ping visible only to you.
+
+[size=4][b]Settings[/b][/size]
+[font=Courier New]BepInEx/config/wiki.thevalheim.liveseedmap.cfg[/font]
+[list]
+[*][b]Interval[/b] (0.25): seconds between updates
+[*][b]Origins[/b] (https://thevalheim.wiki): pages allowed to read your game
+[*][b]AllowPinWrites[/b] (false): optional browser editing of your map pins
+[*][b]ShowOnMapKey[/b] (J): find the item or creature you point at
+[*][b]AllowTracking[/b] (true): show a map target as a ping in your game
+[/list]
+
+[size=4][b]Multiplayer[/b][/size]
+On a server or as the host, other players appear the way the in-game map shows them: only those who share their position.
+
+Guide: [url=https://thevalheim.wiki/guides/live-seed-map]thevalheim.wiki/guides/live-seed-map[/url]

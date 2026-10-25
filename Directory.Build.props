@@ -1,0 +1,25 @@
+<Project>
+  <!-- Built on NE8K against the installed client in place (DR-2026-09-22-no-game-copies); references never copy. -->
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <LangVersion>latest</LangVersion>
+    <ValheimRoot Condition="'$(ValheimRoot)' == ''">C:\Program Files (x86)\Steam\steamapps\common\Valheim</ValheimRoot>
+    <Managed>$(ValheimRoot)\valheim_Data\Managed</Managed>
+    <BepInExCore Condition="'$(BepInExCore)' == ''">$(MSBuildThisFileDirectory)..\data\mod-runtime\BepInEx\core</BepInExCore>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <GenerateDependencyFile>false</GenerateDependencyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BepInEx" HintPath="$(BepInExCore)\BepInEx.dll" Private="false" />
+    <Reference Include="0Harmony" HintPath="$(BepInExCore)\0Harmony.dll" Private="false" />
+    <Reference Include="UnityEngine" HintPath="$(Managed)\UnityEngine.dll" Private="false" />
+    <Reference Include="UnityEngine.CoreModule" HintPath="$(Managed)\UnityEngine.CoreModule.dll" Private="false" />
+    <Reference Include="UnityEngine.PhysicsModule" HintPath="$(Managed)\UnityEngine.PhysicsModule.dll" Private="false" />
+    <Reference Include="assembly_valheim" HintPath="$(Managed)\assembly_valheim.dll" Private="false" />
+    <Reference Include="UnityEngine.UIModule" HintPath="$(Managed)\UnityEngine.UIModule.dll" Private="false" />
+    <Reference Include="assembly_utils" HintPath="$(Managed)\assembly_utils.dll" Private="false" />
+    <Reference Include="assembly_guiutils" HintPath="$(Managed)\assembly_guiutils.dll" Private="false" />
+    <Reference Include="Splatform" HintPath="$(Managed)\Splatform.dll" Private="false" />
+    <Reference Include="Newtonsoft.Json" HintPath="$(Managed)\Newtonsoft.Json.dll" Private="false" />
+  </ItemGroup>
+</Project>

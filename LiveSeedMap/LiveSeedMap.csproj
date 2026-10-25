@@ -1,0 +1,10 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>LiveSeedMap</AssemblyName>
+    <RootNamespace>LiveSeedMap</RootNamespace>
+    <Version>1.5.0</Version>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Remove="thunderstore/**" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,34 @@
+# BepInEx for Valheim on macOS
+
+The native Apple Silicon loader package used by the
+[Valheim mods on Mac guide](https://thevalheim.wiki/guides/mods-on-mac).
+
+Download the ZIP and its SHA-256 checksum from this repository's releases,
+then follow the guide for installation and Steam launch options.
+
+The package combines BepInEx 5.4.23.5 from the pinned `v5-lts` commit
+`01fd4aabe29a3fad7d479347f4eb58f24ea46836` with UnityDoorstop 4.6.0.
+The source revisions and download checksums are pinned in `package.sh`.
+
+## Build
+
+Install a .NET 8 SDK and run:
+
+```sh
+sh package.sh
+```
+
+Alternatively, set `DOTNET` to the SDK executable. A standalone checkout writes
+working inputs under `data/macos-loader/` and the release ZIP under `dist/`.
+The package source remains in this repository; the script fetches its pinned
+upstream inputs.
+
+## Verification scope
+
+The native Apple Silicon loader build has loaded mods in Valheim. The exact
+packaged ZIP still needs its separate installation acceptance; Intel hardware
+has not been verified. The release is marked prerelease while those checks
+remain open.
+
+For the realtime map and companion mod, visit
+[thevalheim.wiki](https://thevalheim.wiki/map).

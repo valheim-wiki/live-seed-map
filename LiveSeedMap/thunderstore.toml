@@ -1,0 +1,34 @@
+[config]
+schemaVersion = "0.0.1"
+
+[package]
+# The Thunderstore team that owns the listing; created by the owner with the account (docs/live-link.mdx#release).
+namespace = "TheValheimWiki"
+name = "LiveSeedMap"
+versionNumber = "1.5.0"
+description = "Shows your running game on the thevalheim.wiki seed map: position, players, creatures, pins, portals and the trader camps your world kept, and tracks any place from the map in your game as a ping. Stays on your PC."
+websiteUrl = "https://thevalheim.wiki/guides/live-seed-map"
+containsNsfwContent = false
+
+[package.dependencies]
+denikson-BepInExPack_Valheim = "5.4.2351"
+
+[build]
+icon = "./icon.png"
+readme = "./README.md"
+outdir = "../dist"
+
+[[build.copy]]
+source = "./CHANGELOG.md"
+target = "CHANGELOG.md"
+
+[[build.copy]]
+source = "../../data/mod-runtime/build/LiveSeedMap/LiveSeedMap.dll"
+target = "plugins/LiveSeedMap.dll"
+
+[publish]
+repository = "https://thunderstore.io"
+communities = ["valheim"]
+
+[publish.categories]
+valheim = ["client-side", "utility", "tools"]

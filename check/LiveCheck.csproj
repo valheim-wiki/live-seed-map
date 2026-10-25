@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <!-- Out-of-game check of LiveServer's HTTP rules and pin-write plumbing (docs/live-link.mdx#checks); never packaged.
+       The game's and BepInEx's assemblies are loaded from where they are (LIVE_MANAGED, LIVE_BEPINEX), never copied. -->
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <AssemblyName>LiveCheck</AssemblyName>
+    <Nullable>disable</Nullable>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\LiveSeedMap\LiveSeedMap.csproj" />
+  </ItemGroup>
+</Project>

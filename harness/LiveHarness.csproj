@@ -1,0 +1,7 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <!-- Test-only session driver for NE8K proof runs; never packaged. -->
+  <PropertyGroup>
+    <AssemblyName>LiveHarness</AssemblyName>
+    <RootNamespace>LiveHarness</RootNamespace>
+  </PropertyGroup>
+</Project>
