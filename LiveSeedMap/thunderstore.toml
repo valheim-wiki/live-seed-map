@@ -23,7 +23,7 @@ source = "./CHANGELOG.md"
 target = "CHANGELOG.md"
 
 [[build.copy]]
-source = "../../data/mod-runtime/build/LiveSeedMap/LiveSeedMap.dll"
+source = "./bin/Release/LiveSeedMap.dll"
 target = "plugins/LiveSeedMap.dll"
 
 [publish]
