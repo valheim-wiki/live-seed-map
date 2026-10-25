@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.5.1
+
+- The listing now pairs each advertised feature with a screenshot from the running game or connected website.
+- Installation links and the project summary are refreshed. Runtime behavior is unchanged from 1.5.0.
+
 ## 1.5.0
 
 - Every update carries `mod`, the mod's version, so the seed map can tell you when a newer one is out.

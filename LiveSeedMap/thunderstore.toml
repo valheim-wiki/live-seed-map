@@ -5,8 +5,8 @@ schemaVersion = "0.0.1"
 # The Thunderstore team that owns the listing; created by the owner with the account (docs/live-link.mdx#release).
 namespace = "TheValheimWiki"
 name = "LiveSeedMap"
-versionNumber = "1.5.0"
-description = "Shows your running game on the thevalheim.wiki seed map: position, players, creatures, pins, portals and the trader camps your world kept, and tracks any place from the map in your game as a ping. Stays on your PC."
+versionNumber = "1.5.1"
+description = "A realtime map of your Valheim server in a browser, through the Live Seed Map companion mod at thevalheim.wiki."
 websiteUrl = "https://thevalheim.wiki/guides/live-seed-map"
 containsNsfwContent = false
 
