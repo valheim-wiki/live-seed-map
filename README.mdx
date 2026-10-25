@@ -13,11 +13,18 @@ Game data includes creature stats and drops.
 ## Install
 
 Get the mod on [Thunderstore](https://thunderstore.io/c/valheim/p/TheValheimWiki/LiveSeedMap/)
-or from this repository's releases. Follow the
+or from the [GitHub releases](https://github.com/game-valheim/live-seed-map/releases). Follow the
 [installation guide](https://thevalheim.wiki/guides/live-seed-map).
 Apple Silicon players use the [macOS guide](https://thevalheim.wiki/guides/mods-on-mac).
 
 See real screenshots and installation instructions in [the mod README](LiveSeedMap/README.md).
+
+## Source
+
+The companion mod source is at
+[game-valheim/live-seed-map](https://github.com/game-valheim/live-seed-map).
+The native macOS loader's packaging recipe has its own repository,
+[game-valheim/bepinex-macos](https://github.com/game-valheim/bepinex-macos).
 
 ## Build
 
@@ -34,6 +41,21 @@ dotnet build LiveSeedMap/LiveSeedMap.csproj --configuration Release \
 On macOS, `Managed` is inside
 `valheim.app/Contents/Resources/Data/Managed`. Game assemblies are references
 and are not distributed with this mod.
+
+## Package a release
+
+On Windows, run from the standalone source checkout with Git and the .NET SDK
+available:
+
+```powershell
+.\package.ps1 -ValheimRoot "C:\path\to\Valheim" -BepInExCore "C:\path\to\BepInEx\core"
+```
+
+In the wiki checkout the script is `mod/package.ps1`. `-Managed` accepts a
+different managed-assembly directory. The command builds
+`LiveSeedMap/bin/Release/LiveSeedMap.dll`, then writes the Thunderstore ZIP,
+manual-install ZIP and `SHA256SUMS.txt` under `dist/` beside the script. SDK,
+NuGet and Thunderstore CLI data stay under `data/` in the owning Git root.
 
 ## Support
 

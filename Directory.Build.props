@@ -1,11 +1,14 @@
 <Project>
-  <!-- Built on NE8K against the installed client in place (DR-2026-09-22-no-game-copies); references never copy. -->
+  <!-- Build against the installed client in place; references never copy. -->
   <PropertyGroup>
     <TargetFramework>netstandard2.1</TargetFramework>
     <LangVersion>latest</LangVersion>
     <ValheimRoot Condition="'$(ValheimRoot)' == ''">C:\Program Files (x86)\Steam\steamapps\common\Valheim</ValheimRoot>
     <Managed>$(ValheimRoot)\valheim_Data\Managed</Managed>
-    <BepInExCore Condition="'$(BepInExCore)' == ''">$(MSBuildThisFileDirectory)..\data\mod-runtime\BepInEx\core</BepInExCore>
+    <!-- The source lives in mod/ in the wiki pack and at the standalone repository root. -->
+    <LiveSeedMapRoot>$(MSBuildThisFileDirectory)</LiveSeedMapRoot>
+    <LiveSeedMapRoot Condition="!Exists('$(MSBuildThisFileDirectory).git') And Exists('$(MSBuildThisFileDirectory)..\.git')">$(MSBuildThisFileDirectory)..\</LiveSeedMapRoot>
+    <BepInExCore Condition="'$(BepInExCore)' == ''">$(LiveSeedMapRoot)data\mod-runtime\BepInEx\core</BepInExCore>
     <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
     <GenerateDependencyFile>false</GenerateDependencyFile>
   </PropertyGroup>
