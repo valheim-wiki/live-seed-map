@@ -11,7 +11,7 @@ namespace LiveSeedMap
     public sealed class Plugin : BaseUnityPlugin
     {
         public const string Guid = "wiki.thevalheim.liveseedmap";
-        public const string Version = "1.5.1";
+        public const string Version = "1.5.2";
         /// <summary>The one port the seed map looks for; a page cannot learn another.</summary>
         public const int Port = 45892;
         /// <summary>The shortest Interval the mod keeps, so a typo such as 0 does not capture every frame.</summary>

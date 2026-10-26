@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.5.2
+
+- The mod and its player guides now use the name **Realtime Map from seed**.
+- The installed mod display name and illustrated listing use the same name. Gameplay is unchanged.
+
 ## 1.5.1
 
 - The listing now pairs each advertised feature with a screenshot from the running game or connected website.
