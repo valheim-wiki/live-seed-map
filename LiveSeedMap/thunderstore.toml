@@ -5,7 +5,7 @@ schemaVersion = "0.0.1"
 # The Thunderstore team that owns the listing; created by the owner with the account (docs/live-link.mdx#release).
 namespace = "TheValheimWiki"
 name = "LiveSeedMap"
-versionNumber = "1.5.2"
+versionNumber = "1.5.3"
 description = "A realtime map of your Valheim server in a browser, through the Realtime Map from seed companion mod at thevalheim.wiki."
 websiteUrl = "https://thevalheim.wiki/guides/live-seed-map"
 containsNsfwContent = false

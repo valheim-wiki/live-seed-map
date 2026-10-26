@@ -28,15 +28,15 @@ Pick a map target and choose **Track in game**. Here Haldor is tracked at 2.6 km
 
 1. Install BepInExPack Valheim, then Realtime Map from seed with your mod manager or extract the manual ZIP into your Valheim folder.
 2. Start Valheim and load your world.
-3. Open [thevalheim.wiki/map](https://thevalheim.wiki/map) and press **Connect game**. Allow the browser's local-network prompt when asked.
+3. Open [thevalheim.wiki/map](https://thevalheim.wiki/map) and press **Connect game**. If your browser asks, allow the website to connect to your game.
 
-On Apple Silicon, follow [Valheim mods on Mac](https://thevalheim.wiki/guides/mods-on-mac) for the native loader.
+On Apple Silicon, follow [Valheim mods on Mac](https://thevalheim.wiki/guides/mods-on-mac) before installing the mod.
 
 Source and releases: [valheim-wiki/live-seed-map](https://github.com/valheim-wiki/live-seed-map).
 Visit the [Valheim tools showcase](https://game-valheim.github.io/) or follow the [setup field guide](https://valheim-wiki.github.io/).
 
 ![The site showing Connected and Follow me on the map with Valheim running](https://raw.githubusercontent.com/valheim-wiki/live-seed-map/main/listing/screenshots/home-connected.png)
 
-The mod listens on your computer at `127.0.0.1`. See the [installation guide and settings](https://thevalheim.wiki/guides/live-seed-map) for configuration, permissions and multiplayer behavior.
+Follow the [Realtime Map from seed installation guide](https://thevalheim.wiki/guides/live-seed-map) for step-by-step setup and help connecting your game.
 
 Support development at [Ko-fi](https://ko-fi.com/thevalheimwiki).

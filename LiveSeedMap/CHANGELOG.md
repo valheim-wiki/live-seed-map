@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.5.3
+
+- Installation and connection descriptions now use plain player language and clearer setup links.
+- Gameplay is unchanged.
+
 ## 1.5.2
 
 - The mod and its player guides now use the name **Realtime Map from seed**.
